@@ -1,0 +1,22 @@
+[
+  {
+    "text": "pаypal",
+    "expectedIssue": "MIXED_SCRIPT_TOKEN"
+  },
+  {
+    "text": "bi\u200Btch",
+    "expectedIssue": "ZERO_WIDTH_CHARACTERS"
+  },
+  {
+    "text": "abc\u202Edef",
+    "expectedIssue": "SUSPICIOUS_UNICODE"
+  },
+  {
+    "text": "safe\u0001text",
+    "expectedIssue": "SUSPICIOUS_UNICODE"
+  },
+  {
+    "text": "раypal",
+    "expectedIssue": "MIXED_SCRIPT_TOKEN"
+  }
+]

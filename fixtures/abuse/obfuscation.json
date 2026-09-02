@@ -1,0 +1,15 @@
+[
+  { "text": "f u c k", "expectedIssue": "PROFANITY" },
+  { "text": "f*ck", "expectedIssue": "PROFANITY" },
+  { "text": "sh!t", "expectedIssue": "PROFANITY" },
+  { "text": "a55hole", "expectedIssue": "INSULT" },
+  { "text": "b1tch", "expectedIssue": "INSULT" },
+  { "text": "bіtch", "expectedIssue": "INSULT" },
+  { "text": "сyка", "expectedIssue": "PROFANITY" },
+  { "text": "cука", "expectedIssue": "PROFANITY" },
+  { "text": "сук4", "expectedIssue": "PROFANITY" },
+  { "text": "бл9ть", "expectedIssue": "PROFANITY" },
+  { "text": "хyй", "expectedIssue": "PROFANITY" },
+  { "text": "dolboeb", "expectedIssue": "INSULT" },
+  { "text": "pizdets", "expectedIssue": "PROFANITY" }
+]

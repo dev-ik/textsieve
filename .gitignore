@@ -1,0 +1,33 @@
+# Internal agent and maintainer working files
+AGENTS.md
+.agents/
+.codex/
+docs/RELEASE_CHECKLIST.md
+
+# Dependencies and generated output
+node_modules/
+dist/
+coverage/
+.cache/
+.nyc_output/
+.vite/
+.vitest/
+*.tsbuildinfo
+*.tgz
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo

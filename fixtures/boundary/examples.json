@@ -1,0 +1,14 @@
+[
+  { "locale": "ru", "text": "застрахуй автомобиль", "expected": "allow" },
+  { "locale": "ru", "text": "подстрахуй меня завтра", "expected": "allow" },
+  { "locale": "ru", "text": "компания Сукачи", "expected": "allow" },
+  { "locale": "ru", "text": "бляха-муха", "expected": "allow" },
+  { "locale": "ru", "text": "Пизанская башня", "expected": "allow" },
+  { "locale": "ru", "text": "хулиганское поведение", "expected": "allow" },
+  { "locale": "en", "text": "classic assignment", "expected": "allow" },
+  { "locale": "en", "text": "passionate assistant", "expected": "allow" },
+  { "locale": "en", "text": "Shiitake mushroom", "expected": "allow" },
+  { "locale": "en", "text": "Scunthorpe United", "expected": "allow" },
+  { "locale": "en", "text": "Dickinson research", "expected": "allow" },
+  { "locale": "en", "text": "Use a pin to prick the surface", "expected": "allow" }
+]

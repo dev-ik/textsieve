@@ -1,0 +1,44 @@
+{
+  "name": "@textsieve/en",
+  "version": "0.1.1",
+  "description": "English language pack for TextSieve",
+  "keywords": ["textsieve", "english", "moderation", "profanity"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-ik/textsieve.git",
+    "directory": "packages/en"
+  },
+  "homepage": "https://github.com/dev-ik/textsieve#readme",
+  "bugs": {
+    "url": "https://github.com/dev-ik/textsieve/issues"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "files": ["dist", "README.ru.md"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "typecheck": "tsc -b --pretty false",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@textsieve/core": "^0.1.0"
+  },
+  "devDependencies": {
+    "@textsieve/core": "0.1.1"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

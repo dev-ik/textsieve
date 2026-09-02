@@ -1,0 +1,32 @@
+[
+  {
+    "text": "ах ты bitch",
+    "expectedIssue": "INSULT",
+    "detectedLanguage": "en"
+  },
+  {
+    "text": "ты cyka",
+    "expectedIssue": "INSULT",
+    "candidate": "сука"
+  },
+  {
+    "text": "suka",
+    "expectedIssue": "PROFANITY",
+    "candidate": "сука"
+  },
+  { "text": "это полный пиздец", "expectedIssue": "PROFANITY" },
+  { "text": "какой же ты идиот", "expectedIssue": "INSULT" },
+  { "text": "ты дебил", "expectedIssue": "INSULT" },
+  { "text": "ну и дурак", "expectedIssue": "INSULT" },
+  { "text": "пошёл нахуй", "expectedIssue": "PROFANITY" },
+  { "text": "ебаный кошмар", "expectedIssue": "PROFANITY" },
+  { "text": "ты мудак", "expectedIssue": "INSULT" },
+  { "text": "жалкая мразь", "expectedIssue": "INSULT" },
+  { "text": "you are an idiot", "expectedIssue": "INSULT" },
+  { "text": "what a moron", "expectedIssue": "INSULT" },
+  { "text": "this is bullshit", "expectedIssue": "PROFANITY" },
+  { "text": "you dumbass", "expectedIssue": "INSULT" },
+  { "text": "fucking awful", "expectedIssue": "PROFANITY" },
+  { "text": "complete asshole", "expectedIssue": "INSULT" },
+  { "text": "you bastard", "expectedIssue": "INSULT" }
+]

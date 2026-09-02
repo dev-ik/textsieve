@@ -1,0 +1,103 @@
+import type { LanguagePack } from "@textsieve/core";
+
+const patterns = Object.freeze([
+  { value: "сука", canonical: "сука", category: "profanity", severity: "high" },
+  { value: "суки", canonical: "сука", category: "profanity", severity: "high" },
+  { value: "сукой", canonical: "сука", category: "profanity", severity: "high" },
+  { value: "сучка", canonical: "сучка", category: "insult", severity: "high" },
+  { value: "блять", canonical: "блять", category: "profanity", severity: "high" },
+  { value: "блядь", canonical: "блядь", category: "profanity", severity: "high" },
+  { value: "бля", canonical: "блять", category: "profanity", severity: "high" },
+  { value: "блядина", canonical: "блядь", category: "insult", severity: "high" },
+  { value: "блть", canonical: "блять", category: "profanity", severity: "high" },
+  { value: "нахуй", canonical: "нахуй", category: "profanity", severity: "high" },
+  { value: "похуй", canonical: "похуй", category: "profanity", severity: "high" },
+  { value: "охуеть", canonical: "охуеть", category: "profanity", severity: "high" },
+  { value: "хуй", canonical: "хуй", category: "profanity", severity: "high" },
+  { value: "хуя", canonical: "хуй", category: "profanity", severity: "high" },
+  { value: "хуёвый", canonical: "хуёвый", category: "profanity", severity: "high" },
+  { value: "хуевый", canonical: "хуёвый", category: "profanity", severity: "high" },
+  { value: "пизда", canonical: "пизда", category: "profanity", severity: "high" },
+  { value: "пиздец", canonical: "пиздец", category: "profanity", severity: "high" },
+  { value: "пиздеть", canonical: "пиздеть", category: "profanity", severity: "high" },
+  { value: "ебать", canonical: "ебать", category: "profanity", severity: "high" },
+  { value: "ебучий", canonical: "ебучий", category: "profanity", severity: "high" },
+  { value: "ебаный", canonical: "ебаный", category: "profanity", severity: "high" },
+  { value: "ебаная", canonical: "ебаный", category: "profanity", severity: "high" },
+  { value: "ебаное", canonical: "ебаный", category: "profanity", severity: "high" },
+  { value: "ебаные", canonical: "ебаный", category: "profanity", severity: "high" },
+  { value: "идиот", canonical: "идиот", category: "insult", severity: "medium" },
+  { value: "идиотка", canonical: "идиот", category: "insult", severity: "medium" },
+  { value: "дебил", canonical: "дебил", category: "insult", severity: "high" },
+  { value: "дебилка", canonical: "дебил", category: "insult", severity: "high" },
+  { value: "дурак", canonical: "дурак", category: "insult", severity: "medium" },
+  { value: "дура", canonical: "дурак", category: "insult", severity: "medium" },
+  { value: "мудак", canonical: "мудак", category: "insult", severity: "high" },
+  { value: "мудаки", canonical: "мудак", category: "insult", severity: "high" },
+  { value: "мудила", canonical: "мудила", category: "insult", severity: "high" },
+  { value: "урод", canonical: "урод", category: "insult", severity: "medium" },
+  { value: "мразь", canonical: "мразь", category: "insult", severity: "high" },
+  { value: "придурок", canonical: "придурок", category: "insult", severity: "medium" },
+  { value: "кретин", canonical: "кретин", category: "insult", severity: "medium" },
+  { value: "дегенерат", canonical: "дегенерат", category: "insult", severity: "high" },
+  { value: "долбоёб", canonical: "долбоёб", category: "insult", severity: "high" },
+  { value: "долбоеб", canonical: "долбоёб", category: "insult", severity: "high" },
+  { value: "гандон", canonical: "гандон", category: "insult", severity: "high" }
+] as const);
+
+const transliteration = Object.freeze({
+  suka: "сука",
+  cyka: "сука",
+  suki: "суки",
+  suchka: "сучка",
+  blyat: "блять",
+  bliat: "блять",
+  blyad: "блядь",
+  nahui: "нахуй",
+  nahuy: "нахуй",
+  pohui: "похуй",
+  ohuet: "охуеть",
+  hui: "хуй",
+  pizda: "пизда",
+  pizdec: "пиздец",
+  pizdets: "пиздец",
+  ebat: "ебать",
+  mudak: "мудак",
+  mraz: "мразь",
+  dolboeb: "долбоеб",
+  gandon: "гандон"
+});
+
+export const ru = Object.freeze({
+  locale: "ru",
+  patterns,
+  transliteration,
+  vowels: "аеёиоуыэюя",
+  commonWords: Object.freeze(["и", "в", "не", "на", "я", "мы", "это", "как", "для", "что"]),
+  commonNgrams: Object.freeze([
+    "ст", "но", "ен", "то", "на", "ов", "ни", "ра", "во", "ко", "пр", "ро", "по", "ре", "ал", "ли",
+    "ор", "ер", "ка", "та", "ма", "ос", "го", "от", "те", "ет", "ит", "ла", "ан", "ес", "ва", "ти",
+    "ар", "ил", "од", "ол", "не", "ве", "де", "ат", "ин", "тр", "ло", "ме", "до", "че", "ск", "чт",
+    "об", "раз", "аб", "бо", "чи", "ик"
+  ]),
+  technicalAllowlist: Object.freeze([
+    "react",
+    "typescript",
+    "javascript",
+    "node.js",
+    "next.js",
+    "postgresql",
+    "oauth2",
+    "openapi",
+    "npm",
+    "pnpm",
+    "sdk",
+    "api",
+    "dev-ik"
+  ]),
+  keyboardRows: Object.freeze(["йцукенгшщзхъ", "фывапролджэ", "ячсмитьбю"]),
+  insultPrefixes: Object.freeze(["ты", "вы", "тебя", "вас"]),
+  contextualInsults: Object.freeze(["сука", "сучка"])
+} as const satisfies LanguagePack);
+
+export default ru;

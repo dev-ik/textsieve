@@ -1,0 +1,74 @@
+[
+  {
+    "text": "Я использую React и TypeScript",
+    "expected": "allow"
+  },
+  {
+    "text": "React/Node.js разработчик",
+    "expected": "allow"
+  },
+  {
+    "text": "PostgreSQL и OpenAPI",
+    "expected": "allow"
+  },
+  {
+    "text": "ООО Ромашка",
+    "expected": "allow"
+  },
+  {
+    "text": "Спасибо за быструю доставку и аккуратную упаковку",
+    "expected": "allow"
+  },
+  {
+    "text": "Сегодня отличная погода для прогулки",
+    "expected": "allow"
+  },
+  {
+    "text": "Иван Петров, улица Мира, дом 15",
+    "expected": "allow"
+  },
+  {
+    "text": "Компания Сукачи и партнёры",
+    "expected": "allow"
+  },
+  {
+    "text": "Страхуй имущество заранее",
+    "expected": "allow"
+  },
+  {
+    "text": "Подстрахуй коллегу на встрече",
+    "expected": "allow"
+  },
+  {
+    "text": "Пизанская башня находится в Италии",
+    "expected": "allow"
+  },
+  {
+    "text": "Бляха закреплена на кожаном ремне",
+    "expected": "allow"
+  },
+  {
+    "text": "Хулиган разбил окно и убежал",
+    "expected": "allow"
+  },
+  {
+    "text": "Артикул SKU-123, модель iPhone 15 Pro Max",
+    "expected": "allow"
+  },
+  {
+    "text": "Клиент использует Kubernetes, GraphQL и Redis",
+    "expected": "allow"
+  },
+  {
+    "text": "Документация доступна по адресу https://example.com/docs",
+    "expected": "allow"
+  },
+  {
+    "text": "Напишите на support@example.com для получения ответа",
+    "expected": "allow"
+  },
+  {
+    "text": "Достопримечательность, производительность, ответственность",
+    "expected": "allow"
+  }
+]

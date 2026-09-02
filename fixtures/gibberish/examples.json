@@ -1,0 +1,22 @@
+[
+  {
+    "text": "ывпавфыапфыва",
+    "expectedIssue": "GIBBERISH_HIGH"
+  },
+  {
+    "text": "asdfghjkl",
+    "expectedIssue": "KEYBOARD_SMASH"
+  },
+  {
+    "text": "qwertyuiop",
+    "expectedIssue": "KEYBOARD_SMASH"
+  },
+  {
+    "text": "фывапролджэ",
+    "expectedIssue": "KEYBOARD_SMASH"
+  },
+  {
+    "text": "jskdfjksdfjk",
+    "expectedIssue": "GIBBERISH_HIGH"
+  }
+]

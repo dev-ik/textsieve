@@ -1,0 +1,16 @@
+[
+  { "text": "Thank you for the quick delivery", "expected": "allow" },
+  { "text": "Class assignment is ready for review", "expected": "allow" },
+  { "text": "Dickinson and Associates", "expected": "allow" },
+  { "text": "Shiitake mushrooms are available today", "expected": "allow" },
+  { "text": "Passion fruit and assorted vegetables", "expected": "allow" },
+  { "text": "Scunthorpe railway station", "expected": "allow" },
+  { "text": "The assistant scheduled an assessment", "expected": "allow" },
+  { "text": "Use a pin to prick the balloon carefully", "expected": "allow" },
+  { "text": "PostgreSQL OAuth2 OpenAPI SDK", "expected": "allow" },
+  { "text": "Customer ID usr_01HZ4Q7K8M", "expected": "allow" },
+  { "text": "Node.js runtime and TypeScript compiler", "expected": "allow" },
+  { "text": "Read the documentation at https://example.com/getting-started", "expected": "allow" },
+  { "text": "Contact support@example.com for assistance", "expected": "allow" },
+  { "text": "Internationalization and interoperability requirements", "expected": "allow" }
+]

@@ -1,0 +1,38 @@
+{
+  "name": "@textsieve/core",
+  "version": "0.1.1",
+  "description": "Deterministic text quality and safety engine",
+  "keywords": ["text", "moderation", "profanity", "spam", "unicode", "validation"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-ik/textsieve.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/dev-ik/textsieve#readme",
+  "bugs": {
+    "url": "https://github.com/dev-ik/textsieve/issues"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "files": ["dist", "README.ru.md"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "typecheck": "tsc -b --pretty false",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
