@@ -1,8 +1,17 @@
 # TextSieve
 
+[![версия npm](https://img.shields.io/npm/v/textsieve?logo=npm)](https://www.npmjs.com/package/textsieve)
+[![CI](https://github.com/dev-ik/textsieve/actions/workflows/ci.yml/badge.svg)](https://github.com/dev-ik/textsieve/actions/workflows/ci.yml)
+[![Node.js](https://img.shields.io/node/v/textsieve?logo=node.js)](https://www.npmjs.com/package/textsieve)
+[![Лицензия: MIT](https://img.shields.io/npm/l/textsieve)](LICENSE)
+
 [English](README.md) | Русский
 
 TextSieve — детерминированный фильтр качества и безопасности текста для JavaScript и TypeScript. Он обнаруживает явные оскорбления, консервативно распознаёт обфускацию, подозрительный Unicode, спамоподобное оформление и базовые признаки бессмысленного текста без ИИ, удалённых API, телеметрии и сетевых запросов.
+
+![Демонстрация TextSieve в терминале](docs/assets/textsieve-demo.gif)
+
+Тот же сценарий можно запустить локально из [examples/demo.mjs](examples/demo.mjs).
 
 Проект активно развивается. Текущие словари намеренно невелики и пока не подходят на роль единственного уровня модерации в production-сервисе.
 

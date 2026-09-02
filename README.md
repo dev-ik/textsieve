@@ -1,8 +1,17 @@
 # TextSieve
 
+[![npm version](https://img.shields.io/npm/v/textsieve?logo=npm)](https://www.npmjs.com/package/textsieve)
+[![CI](https://github.com/dev-ik/textsieve/actions/workflows/ci.yml/badge.svg)](https://github.com/dev-ik/textsieve/actions/workflows/ci.yml)
+[![Node.js](https://img.shields.io/node/v/textsieve?logo=node.js)](https://www.npmjs.com/package/textsieve)
+[![License: MIT](https://img.shields.io/npm/l/textsieve)](LICENSE)
+
 English | [Русский](README.ru.md)
 
 TextSieve is a deterministic text quality and safety firewall for JavaScript and TypeScript. It detects explicit abuse, conservative obfuscation, suspicious Unicode, spam-like formatting and basic gibberish without AI, remote APIs, telemetry or network requests.
+
+![TextSieve terminal demo](docs/assets/textsieve-demo.gif)
+
+Run the same inspection flow locally with [examples/demo.mjs](examples/demo.mjs).
 
 The project is under active development. The current dictionaries are deliberately small and are not yet suitable as the only moderation layer for a production service.
 

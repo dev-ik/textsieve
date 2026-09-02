@@ -6,6 +6,10 @@ All notable changes to TextSieve will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- README status badges and an animated terminal demo backed by a runnable example.
+
 ## [0.1.1] - 2026-09-02
 
 ### Added
