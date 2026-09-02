@@ -1,6 +1,6 @@
 # @textsieve/en
 
-[English](README.md) | Русский
+[English](https://github.com/dev-ik/textsieve/blob/main/packages/en/README.md) | Русский
 
 Консервативные данные безопасности и текстовая статистика английского языка для TextSieve.
 

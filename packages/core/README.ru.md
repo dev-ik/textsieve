@@ -1,6 +1,6 @@
 # @textsieve/core
 
-[English](README.md) | Русский
+[English](https://github.com/dev-ik/textsieve/blob/main/packages/core/README.md) | Русский
 
 Детерминированное, независимое от среды выполнения ядро проверки качества и безопасности текста. В нём нет runtime-зависимостей, сетевых запросов, телеметрии и AI-инференса.
 

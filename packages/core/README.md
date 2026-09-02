@@ -1,6 +1,6 @@
 # @textsieve/core
 
-English | [Русский](README.ru.md)
+English | [Русский](https://github.com/dev-ik/textsieve/blob/main/packages/core/README.ru.md)
 
 Deterministic, runtime-agnostic text quality and safety engine. It has no runtime dependencies, network requests, telemetry or AI inference.
 

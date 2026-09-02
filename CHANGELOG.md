@@ -12,6 +12,7 @@ All notable changes to TextSieve will be documented in this file.
 
 - GitHub repository, issue tracker and homepage metadata for every npm package.
 - Token-free npm Trusted Publishing workflow with release-tag validation and safe retry behavior.
+- npm-safe absolute language-switch links in all package READMEs.
 
 ## [0.1.0] - 2026-09-02
 
