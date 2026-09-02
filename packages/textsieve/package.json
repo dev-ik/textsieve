@@ -1,0 +1,43 @@
+{
+  "name": "textsieve",
+  "version": "0.1.1",
+  "description": "Deterministic text quality and safety firewall with Russian and English language packs",
+  "keywords": ["text", "moderation", "profanity", "spam", "unicode", "validation", "russian", "english"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-ik/textsieve.git",
+    "directory": "packages/textsieve"
+  },
+  "homepage": "https://github.com/dev-ik/textsieve#readme",
+  "bugs": {
+    "url": "https://github.com/dev-ik/textsieve/issues"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "files": ["dist", "README.ru.md"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "typecheck": "tsc -b --pretty false",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@textsieve/core": "0.1.1",
+    "@textsieve/en": "0.1.1",
+    "@textsieve/ru": "0.1.1"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

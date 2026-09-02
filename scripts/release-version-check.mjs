@@ -3,7 +3,13 @@ import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
 
 const workspace = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const manifestPaths = ["package.json", "packages/core/package.json", "packages/en/package.json", "packages/ru/package.json"];
+const manifestPaths = [
+  "package.json",
+  "packages/core/package.json",
+  "packages/en/package.json",
+  "packages/ru/package.json",
+  "packages/textsieve/package.json"
+];
 const manifests = manifestPaths.map((relativePath) => ({
   relativePath,
   value: JSON.parse(readFileSync(resolve(workspace, relativePath), "utf8"))

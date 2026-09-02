@@ -27,6 +27,7 @@ try {
   run(["pack", "--workspace=@textsieve/core", "--pack-destination", temporary]);
   run(["pack", "--workspace=@textsieve/en", "--pack-destination", temporary]);
   run(["pack", "--workspace=@textsieve/ru", "--pack-destination", temporary]);
+  run(["pack", "--workspace=textsieve", "--pack-destination", temporary]);
 
   mkdirSync(consumer);
   writeFileSync(
@@ -35,9 +36,7 @@ try {
   );
   writeFileSync(
     join(consumer, "smoke.mjs"),
-    `import { createSieve } from "@textsieve/core";
-import { en } from "@textsieve/en";
-import { ru } from "@textsieve/ru";
+    `import { createSieve, en, ru } from "textsieve";
 const sieve = createSieve({
   languagePacks: [ru, en],
   expectedLanguage: "ru",
@@ -57,13 +56,14 @@ if (result.decision !== "reject" || !result.issues.some((issue) => issue.code ==
       packageTarball("packages/core/package.json"),
       packageTarball("packages/en/package.json"),
       packageTarball("packages/ru/package.json"),
+      packageTarball("packages/textsieve/package.json"),
       "--ignore-scripts",
       "--offline"
     ],
     consumer
   );
   execFileSync(process.execPath, ["smoke.mjs"], { cwd: consumer, stdio: "pipe" });
-  console.log("packed npm consumer smoke: ok");
+  console.log("packed npm aggregate consumer smoke: ok");
 } finally {
   rmSync(temporary, { recursive: true, force: true });
 }

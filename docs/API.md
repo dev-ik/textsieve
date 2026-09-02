@@ -2,6 +2,18 @@
 
 English | [Русский](API.ru.md)
 
+Install the complete RU/EN distribution and import its public API from one entry point:
+
+```bash
+npm install textsieve
+```
+
+```ts
+import { createSieve, en, ru } from "textsieve";
+```
+
+The modular packages remain available when only a subset is needed.
+
 ## `createSieve(options)`
 
 Creates an isolated deterministic inspector. Language packs are registered explicitly and snapshotted at creation time.

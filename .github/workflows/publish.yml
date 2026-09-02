@@ -37,4 +37,4 @@ jobs:
       - name: Run release checks
         run: npm run release:check
       - name: Publish packages
-        run: npm run release:publish
+        run: npm run release:publish -- --skip-new-unscoped

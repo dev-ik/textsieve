@@ -13,7 +13,7 @@ TextSieve — детерминированный фильтр качества �
 
 Совместимость с Node.js 20 постоянно проверяется, но сама Node.js 20 больше не поддерживается разработчиками платформы. Для production-развёртываний выбирайте актуальную LTS-версию.
 
-Публикуемые пакеты используют ESM и не имеют runtime-зависимостей.
+Core и языковые пакеты не имеют runtime-зависимостей. Единый пакет `textsieve` зависит только от трёх пакетов TextSieve тех же версий, которые он переэкспортирует.
 
 В ветке 0.1.x публикуются только ESM-пакеты. В Node.js необходимо использовать `import`; CommonJS `require()` не поддерживается.
 
@@ -32,13 +32,11 @@ npm run benchmark
 ## Использование
 
 ```bash
-npm install @textsieve/core @textsieve/ru @textsieve/en
+npm install textsieve
 ```
 
 ```ts
-import { createSieve } from "@textsieve/core";
-import { en } from "@textsieve/en";
-import { ru } from "@textsieve/ru";
+import { createSieve, en, ru } from "textsieve";
 
 const sieve = createSieve({
   languagePacks: [ru, en],
@@ -58,6 +56,8 @@ console.log(result.issues);   // исходные диапазоны и мета
 ```
 
 `expectedLanguage` управляет сигналом несоответствия ожидаемому языку. `safetyLanguages` независимо определяет, какие словари нежелательной лексики применяются. Латинские технические термины в русском тексте сами по себе не приводят к отклонению.
+
+Если важен минимальный размер установки, подключайте только нужные модули: `@textsieve/core`, `@textsieve/ru` и/или `@textsieve/en`. Пакет `textsieve` — удобная единая точка входа, которая переэкспортирует эти три пакета.
 
 ## API
 

@@ -11,3 +11,4 @@
 - [ADR 0007 — Явная композиция языковых пакетов](0007-language-pack-composition.ru.md)
 - [ADR 0008 — Производные представления текста и исходные позиции](0008-text-representations-and-offsets.ru.md)
 - [ADR 0009 — Поддержка сред выполнения и формат модулей](0009-runtime-and-module-format.ru.md)
+- [ADR 0010 — Единый пакет для установки](0010-convenience-package.ru.md)

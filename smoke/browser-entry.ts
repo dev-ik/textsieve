@@ -1,6 +1,4 @@
-import { createSieve } from "@textsieve/core";
-import { en } from "@textsieve/en";
-import { ru } from "@textsieve/ru";
+import { createSieve, en, ru } from "textsieve";
 
 const sieve = createSieve({
   languagePacks: [ru, en],

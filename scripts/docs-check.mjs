@@ -9,6 +9,7 @@ const pairs = [
   ["packages/core/README.md", "packages/core/README.ru.md"],
   ["packages/en/README.md", "packages/en/README.ru.md"],
   ["packages/ru/README.md", "packages/ru/README.ru.md"],
+  ["packages/textsieve/README.md", "packages/textsieve/README.ru.md"],
   ["docs/README.md", "docs/README.ru.md"],
   ["docs/API.md", "docs/API.ru.md"],
   ["docs/DATA_PROVENANCE.md", "docs/DATA_PROVENANCE.ru.md"],
@@ -16,7 +17,7 @@ const pairs = [
   ["docs/RELEASING.md", "docs/RELEASING.ru.md"],
   ["docs/SPEC.md", "docs/SPEC.ru.md"],
   ["docs/adr/README.md", "docs/adr/README.ru.md"],
-  ...Array.from({ length: 9 }, (_, index) => {
+  ...Array.from({ length: 10 }, (_, index) => {
     const number = String(index + 1).padStart(4, "0");
     const names = [
       "package-architecture",
@@ -27,7 +28,8 @@ const pairs = [
       "adversarial-variants",
       "language-pack-composition",
       "text-representations-and-offsets",
-      "runtime-and-module-format"
+      "runtime-and-module-format",
+      "convenience-package"
     ];
     const english = `docs/adr/${number}-${names[index]}.md`;
     return [english, english.replace(/\.md$/u, ".ru.md")];

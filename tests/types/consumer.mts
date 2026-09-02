@@ -1,12 +1,12 @@
 import {
   createSieve,
+  en,
   presets,
+  ru,
   type InspectionResult,
   type LanguagePack,
   type TextRule
-} from "@textsieve/core";
-import { en } from "@textsieve/en";
-import { ru } from "@textsieve/ru";
+} from "textsieve";
 
 const packs: readonly LanguagePack[] = [ru, en];
 const customRule: TextRule = {

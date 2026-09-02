@@ -1,10 +1,8 @@
 import { readdirSync, statSync } from "node:fs";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { createSieve } from "../packages/core/dist/index.js";
+import { createSieve, en, ru } from "../packages/textsieve/dist/index.js";
 import { AhoCorasick } from "../packages/core/dist/matching/aho-corasick.js";
-import { en } from "../packages/en/dist/index.js";
-import { ru } from "../packages/ru/dist/index.js";
 
 const sieve = createSieve({
   languagePacks: [ru, en],
@@ -66,10 +64,10 @@ for (const result of performanceResults) {
   }
 }
 console.table(
-  ["core", "ru", "en"].map((name) => {
+  ["core", "ru", "en", "textsieve"].map((name) => {
     const path = fileURLToPath(new URL(`../packages/${name}/dist`, import.meta.url));
     return {
-      package: `@textsieve/${name}`,
+      package: name === "textsieve" ? name : `@textsieve/${name}`,
       runtimeJsBytes: directoryBytes(path, (file) => file.endsWith(".js")),
       completeDistBytes: directoryBytes(path)
     };

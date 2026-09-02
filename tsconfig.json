@@ -3,6 +3,7 @@
   "references": [
     { "path": "./packages/core" },
     { "path": "./packages/ru" },
-    { "path": "./packages/en" }
+    { "path": "./packages/en" },
+    { "path": "./packages/textsieve" }
   ]
 }

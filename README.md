@@ -13,7 +13,7 @@ The project is under active development. The current dictionaries are deliberate
 
 Node.js 20 compatibility is continuously tested, but Node.js 20 itself is end-of-life. Prefer an actively supported LTS release for production deployments.
 
-The published runtime is ESM-first and has no runtime dependencies.
+The core and language packages have no runtime dependencies. The `textsieve` convenience package depends only on the three matching TextSieve packages it re-exports.
 
 Version 0.1.x publishes ESM-only packages. Node.js applications must use `import`; CommonJS `require()` is not supported.
 
@@ -32,13 +32,11 @@ npm run benchmark
 ## Usage
 
 ```bash
-npm install @textsieve/core @textsieve/ru @textsieve/en
+npm install textsieve
 ```
 
 ```ts
-import { createSieve } from "@textsieve/core";
-import { en } from "@textsieve/en";
-import { ru } from "@textsieve/ru";
+import { createSieve, en, ru } from "textsieve";
 
 const sieve = createSieve({
   languagePacks: [ru, en],
@@ -58,6 +56,8 @@ console.log(result.issues);   // explainable source spans and match metadata
 ```
 
 `expectedLanguage` controls the language-mismatch signal. `safetyLanguages` independently controls which abuse dictionaries run. Latin technical terms inside Russian text are not rejected merely for using Latin script.
+
+For smaller bundles, install only the modules you need: `@textsieve/core`, `@textsieve/ru` and/or `@textsieve/en`. The `textsieve` package is a convenience entry point that re-exports those three packages.
 
 ## API
 

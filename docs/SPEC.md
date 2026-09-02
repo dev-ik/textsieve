@@ -13,9 +13,7 @@ Target runtimes: browser, Node.js 20+, Bun, Edge/Workers; Deno where feasible.
 ## Public API
 
 ```ts
-import { createSieve } from "@textsieve/core";
-import { ru } from "@textsieve/ru";
-import { en } from "@textsieve/en";
+import { createSieve, en, ru } from "textsieve";
 
 const sieve = createSieve({
   languagePacks: [ru, en],
@@ -290,6 +288,7 @@ packages/
   core/
   ru/
   en/
+  textsieve/
 benchmarks/
 fixtures/
 docs/adr/
@@ -297,6 +296,7 @@ examples/
 ```
 
 Target packages:
+- `textsieve` (convenience entry point)
 - `@textsieve/core`
 - `@textsieve/ru`
 - `@textsieve/en`

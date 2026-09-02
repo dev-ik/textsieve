@@ -15,9 +15,7 @@
 ## Публичный API
 
 ```ts
-import { createSieve } from "@textsieve/core";
-import { ru } from "@textsieve/ru";
-import { en } from "@textsieve/en";
+import { createSieve, en, ru } from "textsieve";
 
 const sieve = createSieve({
   languagePacks: [ru, en],
@@ -310,6 +308,7 @@ packages/
   core/
   ru/
   en/
+  textsieve/
 benchmarks/
 fixtures/
 docs/adr/
@@ -318,6 +317,7 @@ examples/
 
 Целевые пакеты:
 
+- `textsieve` (удобная единая точка входа)
 - `@textsieve/core`
 - `@textsieve/ru`
 - `@textsieve/en`
